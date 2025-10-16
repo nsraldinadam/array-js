@@ -32,6 +32,46 @@ Q8. How can you add a new element to the end of an array without using .push()?
 Level 3: Working with Loops and Arrays
 Q9. Write a program that prints all elements in an array using three different loops:
 Here is a Python program that prints all elements in an array using three different loops: a for loop with an index, a for-each loop (or enhanced for loop), and a while loop.
+Level 3: Working with Loops and Arrays
+Q9. Write a program that prints all elements in an array using three different loops:
+Here is a JavaScript program that prints all elements in an array using three different loops: a for loop with an index, a for-of loop, and a while loop.ement
+console.log(myArray[myArray.length - 1]); // prints the last element
+
+let myArray = [1, 2, 3, 'hello', true];
+myArray[1] = 'world'; // changes the second element to 'world'
+console.log(myArray); // prints the modified array
+Q10. Write a program that prints all numbers in an array multiplied by 2 using a loop.
+let myArray = [1, 2, 3, 4, 5];
+for (let i = 0; i < myArray.length; i++) {
+    console.log(myArray[i] * 2);
+}
+Q11. Create an array of names and print each name in uppercase using a loop.
+let names = ['alice', 'bob', 'charlie'];
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i].toUpperCase());
+}
+Q12. Write a program that counts how many items are in an array without using .length. Use
+a loop to count the items.
+let myArray = [1, 2, 3, 'hello', true];
+let count = 0;
+for (let item of myArray) {
+    count++;
+}
+console.log(count); // prints the number of items in the array
+Q13. Create an array of numbers and use a loop to find the largest and smallest number.
+let numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5];
+let largest = numbers[0];
+let smallest = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > largest) {
+        largest = numbers[i];
+    }
+    if (numbers[i] < smallest) {
+        smallest = numbers[i];
+    }
+}
+
 
 
  
