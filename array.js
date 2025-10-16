@@ -28,14 +28,17 @@ Q6. How do you change a value in an array?
     You can change a value in an array by accessing the item using its index and then assigning a new value to that index.
     Write a program that changes the second element of your array to a different value.
 let myArray = [1, 2, 3, 'hello', true];
+Q7. What does .length do?
+    The .length property of an array returns the number of elements in the array. It is a read-only property that gives you the total count of items stored in the array.
+    Write a program that prints the length of your array.
+let myArray = [1, 2, 3, 'hello', true];
+console.log(myArray.length); // prints the length of the array
+
 Q8. How can you add a new element to the end of an array without using .push()?
 Level 3: Working with Loops and Arrays
 Q9. Write a program that prints all elements in an array using three different loops:
 Here is a Python program that prints all elements in an array using three different loops: a for loop with an index, a for-each loop (or enhanced for loop), and a while loop.
 Level 3: Working with Loops and Arrays
-Q9. Write a program that prints all elements in an array using three different loops:
-Here is a JavaScript program that prints all elements in an array using three different loops: a for loop with an index, a for-of loop, and a while loop.ement
-console.log(myArray[myArray.length - 1]); // prints the last element
 
 let myArray = [1, 2, 3, 'hello', true];
 myArray[1] = 'world'; // changes the second element to 'world'
