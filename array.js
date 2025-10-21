@@ -105,7 +105,7 @@ console.log(firstPos);
 console.log(lastPos);
 
 //combine all elements into one string
-let fullName = ['Abdalsalam', 'Abakar', 'Abdalkareem', 'Bakr'];
+let fullName = ['nsraldin', 'Adam', 'dood', 'adam'];
 console.log(fullName.join(' '));
 
 //add 10 to each number using .map
@@ -181,9 +181,54 @@ let words5 = ['Learning', 'JavaScript', 'is', 'fun'];
 let sentence2 = words5.reduce((acc, word) => acc + ' ' + word);
 console.log(sentence2);
 
+//find the longest word using .reduce()
+let words6 = ['short', 'longer', 'longest', 'tiny'];
+let longestWord = words6.reduce((longest, current) => 
+  current.length > longest.length ? current : longest, '');
+console.log(longestWord);
+//find all even numbers using .filter()
+let mixedNums = [1, 2, 3, 4, 5, 6];
+let evenNums = mixedNums.filter(n => n % 2 === 0);
+console.log(evenNums);
 
-
-
+//find first number greater than 4 using .find()
+let moreNums = [1, 2, 3, 4, 5, 6];
+let firstGreaterThanFour = moreNums.find(n => n > 4);
+console.log(firstGreaterThanFour);  
+//find index of first odd number using .findIndex()
+let numberList = [2, 4, 6, 7, 8];
+let firstOddIndex = numberList.findIndex(n => n % 2 !== 0);
+console.log(firstOddIndex);
+//check if all numbers are positive using .every()
+let numList = [1, 2, 3, 4, 5];
+let allPositive = numList.every(n => n > 0);
+console.log(allPositive);
+//check if some numbers are negative using .some()
+let numArray = [1, -2, 3, 4, 5];
+let hasNegative = numArray.some(n => n < 0);
+console.log(hasNegative);
+//flatten a deeply nested array using .flat()
+let deepArray = [1, [2, [3, [4]]]];
+let flattenedArray = deepArray.flat(3);
+console.log(flattenedArray);
+//convert all strings to lowercase using .map()
+let stringArray = ['Hello', 'WORLD', 'JavaScript'];
+let lowercasedArray = stringArray.map(s => s.toLowerCase());
+console.log(lowercasedArray);
+//remove duplicates from an array using Set
+let dupArray = [1, 2, 2, 3, 4, 4, 5];
+let noDupArray = [...new Set(dupArray)];
+console.log(noDupArray);
+//create a shallow copy of an array using .slice()
+let originalArray = [1, 2, 3, 4, 5];
+let shallowCopy = originalArray.slice();
+console.log(shallowCopy);
+//calculate sum and average using .reduce()
+let values = [10, 20, 30, 40];
+let sumValues = values.reduce((sum, val) => sum + val, 0);
+let avgValues = sumValues / values.length;
+console.log(sumValues);
+console.log(avgValues);
 
 
 
